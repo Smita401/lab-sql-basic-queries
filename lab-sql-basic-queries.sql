@@ -51,7 +51,6 @@ where title like '%ARMAGEDDON%'
 and length > 100;
 
 -- 7.3 Determine the number of films that include Behind the Scenes content.
-select count(1)
-from film
-where description like '%Behind the Scenes%';
+select * from film
+where special_features = "Behind the Scenes";
 
